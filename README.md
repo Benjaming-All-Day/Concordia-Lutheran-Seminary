@@ -1,0 +1,2 @@
+# Concordia Lutheran Seminary
+
