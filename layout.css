@@ -1,0 +1,309 @@
+
+
+.section-padding {
+	padding: 84px 0px;
+}
+
+/*
+.container {
+	display: block;
+	width: 88%;
+	max-width: 1400px;
+	margin: 0 auto;
+}  */ 
+
+/* LAYOUT HELPERS */
+
+.page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+} 
+
+.section {
+	padding: 3rem 0;
+}
+
+.section-tight {
+	padding: 2rem 0;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 1.9rem;
+	margin-bottom: 0.75rem;
+}
+
+.section-intro {
+	text-align: center;
+	max-width: 46rem;
+	margin: 0 auto 0 2rem;
+	color: #6D6E71 ;
+}
+
+/* ROW */
+
+.row {
+	display: flex;             /* Makes the content run horizontally, instead of vertically */
+	flex-wrap: wrap;           /* Makes the content wrap down if the elements inside are wider than the screen */
+	align-content: stretch;    /* Makes the elements inside grow to the height of the container */
+	margin: 0px -20px;
+}
+
+.row-justify-end {
+	justify-content: flex-end;
+}
+
+.row-justify-center {
+	justify-content: center;
+}
+
+.row-justify-between {
+	justify-content: space-between;
+}
+
+.row-justify-evenly {
+	justify-content: space-evenly;
+}
+
+.row-align-end {
+	align-items: flex-end; /* UPDATED */
+}
+
+.row-align-center {
+	align-items: center; /* UPDATED */
+}
+
+
+/* COLUMN */
+
+.col {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+	padding: 0px 20px;
+	box-sizing: border-box; /* new property added to reset how padding and width are calculated */
+}
+
+.col-lg-1 {
+	flex: 0 0 8.33%;
+	max-width: 8.33%;
+}
+
+.col-lg-2 {
+	flex: 0 0 16.67%;
+	max-width: 16.67%;
+}
+
+.col-lg-3 {
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.col-lg-4 {
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+}
+
+.col-lg-5 {
+	flex: 0 0 41.67%;
+	max-width: 41.67%;
+}
+
+.col-lg-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.col-lg-7 {
+	flex: 0 0 58.33%;
+	max-width: 58.33%;
+}
+
+.col-lg-8 {
+	flex: 0 0 66.67%;
+	max-width: 66.67%;
+}
+
+.col-lg-9 {
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+.col-lg-10 {
+	flex: 0 0 83.33%;
+	max-width: 83.33%;
+}
+
+.col-lg-11 {
+	flex: 0 0 91.67%;
+	max-width: 91.67%;
+}
+
+.col-lg-12 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 478px) {
+
+	.col-sm-1 {
+		flex: 0 0 8.33%;
+		max-width: 8.33%;
+	}
+
+	.col-sm-2 {
+		flex: 0 0 16.67%;
+		max-width: 16.67%;
+	}
+
+	.col-sm-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.col-sm-4 {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+	}
+
+	.col-sm-5 {
+		flex: 0 0 41.67%;
+		max-width: 41.67%;
+	}
+
+	.col-sm-6 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.col-sm-7 {
+		flex: 0 0 58.33%;
+		max-width: 58.33%;
+	}
+
+	.col-sm-8 {
+		flex: 0 0 66.67%;
+		max-width: 66.67%;
+	}
+
+	.col-sm-9 {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	.col-sm-10 {
+		flex: 0 0 83.33%;
+		max-width: 83.33%;
+	}
+
+	.col-sm-11 {
+		flex: 0 0 91.67%;
+		max-width: 91.67%;
+	}
+
+	.col-sm-12 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}/* media ends */
+
+
+
+/* GRID HELPERS */
+
+.grid {
+	display: grid;
+	gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* optional 4-column for some pages */
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+
+/* UTILITY */
+
+.mt-sm {
+  margin-top: 0.75rem;
+}
+
+.mt-md {
+  margin-top: 1.25rem;
+}
+
+.mt-lg {
+  margin-top: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+
+/* RESPONSIVE HEADER */
+
+@media (max-width: 768px) {
+  .site-header__inner {
+    align-items: flex-start;
+  }
+
+  .site-header__actions {
+    margin-left: auto;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

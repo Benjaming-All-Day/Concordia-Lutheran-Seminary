@@ -1,29 +1,294 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Concordia Lutheran Seminary</title>
-</head>
-<body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Concordia Lutheran Seminary</title>
 
-<div>
-	
-	<h1>Hello World</h1>
+		<!-- STYLES -->
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 
-</div>
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-
-
-
-
-
+	</head>
 
 
 
 
 
+	<body>
+		<div class="page">
+
+		<!-- HEADER  --> 
+		<header class="header">
+
+			<div class="header-inner">
+
+				<!-- LOGO -->
+				<div class="header-logo">
+					<a href="index.html"><img src="images/semlogo3-1.png" alt="Concordia Lutheran Seminary Logo"></a>
+				</div>
+
+				<div class="nav-container">
+					<div class="header-actions">
+						<a href="donate.html" class="header-donate">Donate</a>
+					</div>
+
+					<!-- NAVIGATION -->
+					<nav class="nav-wrap" aria-label="Main navigation">
+						<ul>
+							<li><a href="academics.html" class="nav-link">Academics</a></li>  <!-- alt="404 Error" ?? -->
+							<li><a href="#" class="nav-link">Admissions</a></li>
+							<li><a href="#" class="nav-link">Library</a></li>
+							<li><a href="#" class="nav-link">Community</a></li>
+							<li><a href="#" class="nav-link">About Us</a></li>
+							<li><img src="images/searchbutton.png"></li>
+						</ul>
+					</nav>
+					
+
+				</div>
+			</div>
+		</header>
 
 
-</body>
+
+
+
+
+		<!-- MAIN PAGE CONTENT -->
+
+		<!-- HERO SECTION -->
+		<section class="hero hero-img" aria-label="Concordia Lutheran Seminary Campus">
+			<div class="hero-content">
+				<div class="hero-title">Concordia Lutheran Seminary</div>
+			</div>
+		</section>
+
+		<main class="main">
+
+				
+				<!-- INTRO SECTION -->
+					<section class="section section-ultralight"> <!-- section class for format, section-ultralight for specific color for this section --> 
+						<div class=" container home-intro">
+							<h1 class="text-maroon">There's a place for you here</h1>
+								<h4>Whether you’re considering the call to become a pastor or deacon for the church,
+								   wanting to exploring theology on a deeper level, or part of our Lutheran Church
+								   Canada Family, we are here to serve you through your next journey of learning.
+								</h4>
+						</div>
+					</section>	
+
+
+					<!-- NEWS & EVENTS SECTION -->
+					<section class="section news-section">
+						<div class="container">
+							<h2 class="section-title">News & Events</h2>
+
+							<!-- SECTION CARD LAYOUT -->
+							<div class="grid grid-3 mt-lg"> <!-- mt-lg = Margin Top, Large Screens --> 
+
+								<!-- FIRST CARD; UPCOMING EVENTS  -->
+								<div class="card news-card card-flush">
+
+									<!-- CARD TITLE AND BODY -->
+									<div class="card-body">
+										<h3 class="card-title">Upcoming Events</h3>
+									</div>
+
+									<!-- CARD IMG -->
+									<div class="card-img">
+										<img src="images/SemCalendar.png" alt="Upcoming Events Calendar"/>
+									</div>
+
+								</div>
+								
+								<!-- SECOND CARD; NEWSLETTER -->
+								<div class="card news-card card-flush">
+
+									<!-- CARD TITLE AND BODY -->
+									<div class="card-body">
+										<h3 class="card-title">Newsletter</h3>
+									</div>
+									
+									<!-- CARD IMG -->
+									<div class="card-img">
+										<img src="images/SemNewletter.png" alt="CLS Weekly Newsletter"/>
+									</div>
+
+								</div>
+
+								<!-- THIRD CARD; ONLINE MEDIA -->
+								<div class="card news-card card-flush">
+
+									<!-- CARD TITLE AND BODY -->
+									<div class="card-body">
+										<h3 class="card-title">Online Media</h3>
+									</div>
+									
+									<!-- CARD IMG -->
+									<div class="card-img">
+										<img src="images/SemFacebook.png" alt="Concordia Lutheran Seminary Facebook"/> <!-- should I say embeded?? -->
+									</div>
+
+								</div>
+
+							</div>		
+
+						</div>
+
+					</section>
+
+
+					<!-- OUR VISION SECTION -->
+					<section class="section vision-section section-ultralight"> <!-- In Figma called Sem Gold Ultra Light --> 
+
+						<div class="container">
+
+							<!-- SECTION TITLE -->
+							<h2 class="section-title">Our Vision</h2>
+
+							<!-- "VIDEO" FOR SECTION; IMG USED IN PLACE AS PLACEHOLDER AS VIDEO DOES NOT EXIST -->
+							<div class="video-frame mt-lg position-center">
+								<img src="images/MartinLutherVideo.png" alt="Our Vision Video">
+								<!-- if time make play button reactive -->
+							</div>
+
+						</div>
+
+					</section>
+
+
+
+					<!-- EXPLORE / DISCOVER / PARTNER SECTION -->
+					<section class="section section-lightgold"> <!-- In figma it is called Sem Gold Light --> 
+
+						<div class="container">
+
+							<div class="grid grid-3 mt-lg">
+
+								<!-- EXPLORE PROGRAMS CARD -->
+								<div class="card home-cta-card card-flush ">
+
+									<div class="card-body">
+
+										<h2 class="card-title position-center">Explore Programs</h2>
+											<div class="card-image">
+												<img src="images/service_book-6-1.png" alt=""> <!-- Decorative Image so alt="" --> 
+											</div>
+
+										<a href="academics.html" class="btn btn-primary position-center">Programs</a>
+										
+									</div>
+									
+								</div>
+
+
+								<!-- DISCOVER COMMUNITY CARD -->
+								<div class="card home-cta-card card-flush">
+
+									<div class="card-body">
+
+										<h2 class="card-title position-center">Discover Community</h2>
+											<div class="card-image">
+												<img src="images/fellowship-16-1.png" alt=""> <!-- Decorative Image so alt="" --> 
+											</div>
+										<a href="404.html" class="btn btn-primary">Community</a>
+										
+									</div>
+									
+								</div>
+
+									<!-- PARTNER HERE CARD -->
+								<div class="card home-cta-card card-flush">
+
+									<div class="card-body">
+
+										<h2 class="card-title position-center">Partner Here</h2>
+											<div class="card-image">
+												<img src="images/AllSaints_Sanctuary-1.png" alt=""> <!-- Decorative Image so alt="" --> 
+											</div>
+										<a href="donate.html" class="btn btn-primary">Partner</a>
+										
+									</div>
+									
+								</div>
+
+							</div>
+
+						</div>
+						
+					</section>
+			</main>
+
+
+
+
+			<!-- FOOTER -->
+
+			<footer class="section section-grey">
+				<div class="footer">
+					<div class="row row-justify-center row-justify-evenly">
+						<div class="col col-lg-1 col-sm-4 text-light ">
+							<ul class="footer-links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="academics.html">Academics</a></li>
+								<li><a href="#">Admissions</a></li>
+							</ul>			
+						</div>
+						
+						<div>
+							<ul class="footer-links text-light">
+								<li><a href="#">Community</a></li>
+								<li><a href="#">Library</a></li>
+								<li><a href="#">About Us</a></li>
+							</ul>				
+						</div>
+
+
+						<div class="col col-lg-2 col-sm-4">
+							<div class="footer-img">
+								<img src="images/semlogo2-1.png" alt="Seminary Secondary Logo">
+							</div>
+						</div>
+
+						<div class="col col-lg-3 col-sm-6">
+							
+								<img src="images/SocialLinksGrouped.png" alt="Social Media Links">
+							
+						
+							<div>
+								<p class="text-light">© Concordia Lutheran Seminary  <!-- FORMAT PROPERLY --> 
+									7040 Ada Blvd, Edmonton, Alberta, T5B 4E3 
+									(780) 474-1468
+									info@concordiasem.ab.ca</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row row-justify-center">
+
+						<div class="col col-lg-8 col-sm-8">
+							<p class="text-light">Concordia Lutheran Seminary (CLS) is a seminary of Lutheran Church-Canada located in Edmonton, Alberta. CLS a member of 
+							the International Lutheran Council in partnership with Concordia Lutheran Theological Seminary, St. Catharines. CLS is accredited by
+							the Commission on Accrediting of the Association of Theological Schools in the United States and Canada.</p>
+						</div>
+						
+					</div>
+
+				</div>
+
+
+
+			</footer>
+
+		</div>
+
+	</body>
+
 </html>

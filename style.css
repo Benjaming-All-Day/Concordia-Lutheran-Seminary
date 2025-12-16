@@ -1,0 +1,896 @@
+
+
+
+
+
+
+/* GLOBAL STYLES */
+
+
+/* GLOBAL COLORS REFERENCE LIST */
+/*  
+ #000000 - black 
+ #FFFFFF - white 
+ #6D6E71 - Sem Grey 
+ #E1AB62 - Sem Gold 
+ #AB032A - Sem Red 
+ #CF0C39 - Sem Red Light 
+ #6F1720 - Service Book Maroon
+ #A20328 - Sem Red Slight Dark 
+ #FFC474 - Sem Gold Light 
+ #FFF4E2 - Sem Gold Ultra Light 
+ #A20328 - Sem Red Slight Dark 2
+ #AB0435 - Sem Red Alt Alt 
+
+ */
+
+
+/* BACKGROUND COLOR CLASSES */
+
+.section-ultralight { background-color: #FFF4E2
+ }
+
+.section-lightgold { background-color: #FFC474
+ }
+
+.section-red { background-color: #AB032A;
+}
+
+.section-slightdarkred {  background-color: #A20328;
+
+}
+
+.section-grey { background-color: #6D6E71;
+
+}
+
+.section-patterns {
+	background-image: url(images/AreasOfStudyBackground.png);
+}
+
+
+
+
+html{
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+main {
+	overflow: hidden;
+}
+
+body {
+
+	margin: 0;
+	font-family: "Inria Sans", system-ui, "Segoe UI", sans-serif;
+	line-height: 1.6;
+	color: #6F1720;
+	background-color: #FFF4E2;
+
+}
+
+
+
+/* ----TEXT MODIFIERS ----*/
+
+/* MAIN STYLES */
+/* TEXT STYLES ARE INRIA SERIF UNLESS OTHERWISE SPECIFIED */
+
+h1 {
+	font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+	margin: 0 0 0.5rem;
+	color: #FFF4E2;
+}
+
+h2 {
+	font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+	margin: 0 0 0.5rem;
+	color: #6F1720;
+}
+
+h3 {
+	font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+	margin: 0 0 0.5rem;
+	color: #6F1720;
+	text-align: center;
+}
+
+h3.sans {
+	font-family: "Inria Sans", system-ui, "Segoe UI", sans-serif;
+	margin: 0 0 0.5rem;
+	color: #6F1720;
+}
+
+
+h4 {
+	font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+	margin: 0 0 0.5rem;
+	color: #6F1720;
+}
+
+h4.sans {
+	font-family: "Inria Sans", system-ui, "Segoe UI", sans-serif;
+	margin: 0 0 0.5rem;
+	color: #6F1720;
+	text-align: center;
+}
+
+h4.bold {
+	font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+	font-style: bold;
+	margin: 0 0 0.5rem;
+	color: #6F1720;
+}
+
+p {
+	font-family: "Inria Sans", Georgia, "Times New Roman", sans-serif;
+	margin: 0 0 1rem;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #6F1720;
+	text-align: center;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+	text-decoration: underline;
+}
+
+nav li {
+	list-style: none;
+	padding-left: 0px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	padding-left: 0px;
+}
+
+footer li {
+	display: block;
+	list-style: none;
+	padding-left: 0px;
+}
+
+footer ul {
+	padding-left: 0px;
+}
+
+
+img {
+	max-width: 100%;
+	display: block;
+	border-radius: 12px;
+}
+
+
+/* POSITIONING HELPERS */
+
+.position-left {
+	display: flex;
+	align-content: left;
+	justify-content: left;
+}
+
+.position-center {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+
+/* TEXT STYLES */
+.text-center {
+
+	text-align: center;
+	max-width: 46rem;
+	margin: 0 auto 0 2rem;
+	justify-content: center;
+	align-content: center;
+}
+
+.text-light {
+	color: #FFF4E2 ;
+}
+
+.text-maroon {
+	color: #6F1720;
+}
+
+
+/* IMAGE STYLES */
+
+
+.img-full {
+	display: block;
+	width: 100%;
+}
+
+
+
+/* BUTTONS */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.4rem;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  font-family: "Inria Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.1s ease, box-shadow 0.1s ease,
+    background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background-color: #A20328;
+  color: #FFF4E2;
+  border-color: #A20328;
+}
+
+.btn-secondary {
+  background-color: #FFF4E2;
+  color: #6f1720;
+  border-color: #6f1720;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #FFF4E2;
+  border-color: #FFF4E2;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+}
+
+
+/* HEADER */
+
+.header {
+  background-color: rgba(162, 3, 40, 0.8);
+  color: #FFF4E2;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  position: absolute;
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.header-logo {
+	max-width: 347px;
+	max-height: 90px;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0rem 0.2rem;
+	border-radius: 18px;
+	background-color: #FFF4E2;
+}
+
+
+/* NAV */
+
+.nav-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-link {
+	display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border-radius: 15px;
+  background-color: #FFC474;
+  color: #6F1720;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-link_current {
+  background-color: #FFC474;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  filter: brightness(1.06);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.75rem;
+}
+
+.header-donate {
+  background-color: #FFF4E2;
+  color: #6F1720;
+  border-radius: 15px;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.nav-container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+
+
+
+/*  HERO  */
+
+.hero {
+  position: relative;
+  min-height: 260px;
+  height: 899px;
+  display: flex;
+  align-items: flex-end;
+  object-fit: cover;
+  color: #FFF4E2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-content {
+  position: relative;
+  padding: 3.5rem 1.25rem 2.25rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  display: inline-block;
+  background-color: rgba(162, 3, 40, 0.8);
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  text-align: center;
+  z-index: 20;
+}
+
+	/* HERO BACKGROUND IMAGES */
+
+	.hero-img {
+		background-image: url("images/Concordia-Lutheran-Seminary.png");
+
+	}
+	.hero-academics {
+	  background-image: url("images/AcademicsBackground.png");
+	}
+
+	.hero-calling {
+	  background-image: url("images/CallingBackground.png");
+	}
+
+	.hero-donate {
+	  background-image: url("images/DonateHero.png");
+	}
+
+
+/* BREADCRUMB & SECTION BAR  */
+
+.breadcrumb-bar {
+  background-color: #FFF4E2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.breadcrumb-bar_inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.8rem;
+  color: #6d6e71;
+}
+
+.breadcrumb-bar_inner a {
+  color: #a20328;
+}
+
+.in-section-bar {
+  background-color: #e1ab62;
+  /* background-image: url("images/InThisSectionBackground.png");*/
+  color: #6f1720;
+  border-top: 3px solid #6f1720;
+}
+
+.in-section-bar_inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.4rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.in-section-bar_chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #6f1720;
+  border-bottom: 2px solid #6f1720;
+  transform: rotate(45deg);
+}
+
+
+
+/*  CARDS  */
+
+.card {
+  background-color: #FFF4E2;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.16);
+  padding: 1.4rem 1.4rem 1.5rem;
+}
+
+.card-flush {
+  padding: 0;
+}
+
+.card-image img {
+  border-radius: 18px 18px 0 0;
+}
+
+.card-body {
+  padding: 1.3rem 1.4rem 1.5rem;
+}
+
+.card-title {
+  font-family: "Inria Serif", Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #6d6e71;
+}
+
+
+/*  VIDEO PLACEHOLDER  */
+
+
+
+.video-frame img {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+  border-radius: 0;
+}
+
+.video-frame_play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-frame_play-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(171, 3, 42, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-frame_play-icon::before {
+  content: "";
+  border-style: solid;
+  border-width: 12px 0 12px 20px;
+  border-color: transparent transparent transparent #ffffff;
+  margin-left: 4px;
+}
+
+
+
+
+
+
+/* INDIVIDUAL PAGE STYLES */
+
+
+/* HOME PAGE */
+
+.home-intro {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.home-intro h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.home-intro p {
+  max-width: 40rem;
+  margin: 0 auto;
+  color: #6D6E71;
+}
+
+
+
+			/* HOME PAGE: NEWS & EVENTS SECTION */
+
+			.news-section {
+			  background-color: #AB032A;
+			  color: #FFF4E2;
+			}
+
+			.news-section .section-title {
+			  color: #FFF4E2;
+			}
+
+			.news-card {
+			  background-color: #FFC474;
+			  color: #6F1720;
+			}
+
+			/* HOME PAGE: VISION SECTION */
+
+			.vision-section .section-intro {
+			  color: #6F1720;
+
+
+
+
+			/* HOME PAGE: BOTTOM CARDS (EXPLORE, DOSCOVER, PARTNER) SECTION */
+
+			.home-cta-card .card-title {
+			  margin-top: 0.75rem;
+			  margin-bottom: 0.4rem;
+			}
+
+			.home-cta-card .btn {
+			  margin-top: 0.6rem;
+			}
+
+
+/* ACADEMICS PAGE */
+
+.academics-lead {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  align-items: center;
+}
+
+.academics-lead p {
+  color: #6d6e71;
+}
+
+@media (max-width: 900px) {
+  .academics-lead {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.academics-subsection {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  align-items: center;
+}
+
+.academics-subsection p {
+  color: #6d6e71;
+}
+
+@media (max-width: 900px) {
+  .academics-subsection {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+			/* ACADEMICS PAGE: AREAS OF STUDY SECTION */
+
+			.areas-study {
+			  background-color: #6f1720;
+			  color: #FFF4E2;
+			}
+
+			.areas-study .section-title,
+			.areas-study h3 {
+			  color: #FFF4E2;
+			}
+
+			.areas-study .card {
+			  background-color: rgba(255, 255, 255, 0.07);
+			  color: #FFF4E2;
+			}
+
+			.areas-study p {
+			  color: #f6f6f6;
+			}
+
+			.areas-study .btn-primary {
+			  background-color: #e1ab62;
+			  border-color: #e1ab62;
+			  color: #6f1720;
+			}
+
+
+/* CALLING PAGE */
+
+.calling-intro {
+  text-align: center;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.calling-intro p {
+  color: #6d6e71;
+}
+
+.calling-main {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: center;
+}
+
+.calling-main p {
+  color: #fff4e2;
+}
+
+.calling-main .card {
+  background-color: #a20328;
+  color: #ffffff;
+}
+
+.calling-main .card p {
+  color: #f7f7f7;
+}
+
+@media (max-width: 900px) {
+  .calling-main {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+
+			/* CALLING PAGE: OVERVIEW VIDEOS SECTION */
+
+			.overview-videos .card {
+			  padding: 0;
+			}
+
+			/* CALLING PAGE: PATHS OF CALLING SECTION */
+
+			.paths-grid .card {
+			  background-color: #fff4e2;
+			}
+
+			.paths-grid p {
+			  color: #6d6e71;
+			}
+
+
+
+/* DONATE PAGE SECTION */
+
+.donate-center {
+  text-align: center;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.donate-center p {
+  color: #6d6e71;
+}
+
+.goal-section .grid {
+  align-items: center;
+}
+
+.goal-section p {
+  color: #6d6e71;
+}
+
+.special-projects_text {
+  max-width: 32rem;
+}
+
+.special-projects_text p {
+  color: #6d6e71;
+}
+
+
+
+			/* DONATE PAGE: CARDS */
+
+			.donate-section {
+			  background-color: #ab032a;
+			  color: #FFF4E2;
+			}
+
+			.donate-section .section-title {
+			  color: #FFF4E2;
+			}
+
+			.donate-method-card {
+			  background-color: #FFF4E2;
+			  color: #6f1720;
+			  display: flex;
+			  flex-direction: column;
+
+			  height: 100%;
+			}
+
+			.donate-method-card .card-body {
+			  flex: 1;
+			  display: flex;
+			  flex-direction: column;
+			}
+
+			.donate-method-card p {
+			  flex: 1;
+			  color: #6d6e71;
+			}
+
+
+
+
+
+/*  FOOTER  */
+
+.footer {
+  background-color: #6D6E71;
+  color: #FFF4E2;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: left;
+}
+
+.footer-img {
+	margin: auto auto;
+
+}
+
+
+
+
+
+
+
+/* MOBILE BREAKPOINT */
+
+@media screen and (max-width: 478px) {
+
+	h1 {
+		font-size: 56px;
+	}
+
+	h2 {
+		font-size: 44px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.cta-wrap {
+		display: none;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	.hero-icon {
+		width: 40vw;
+		position: absolute;
+		right: -20%;
+		top: -10vw;
+	}
+
+	.newsletter-form {
+		display: grid;
+		grid-template: 1fr / 1fr;
+		gap: 32px;
+		align-items: start;
+	}
+
+	.footer-logo {
+		display: none;
+	}
+
+	.footer-meta {
+		margin: 0px;
+	}
+
+	.footer-left {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
